@@ -1,0 +1,8 @@
+prefix=/home/turtlepc-04/catkin_ws/devel
+
+Name: line_follower_turtlebot
+Description: Description of line_follower_turtlebot
+Version: 0.0.0
+Cflags: -I/home/turtlepc-04/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
