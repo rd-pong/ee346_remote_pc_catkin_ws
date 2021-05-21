@@ -156,6 +156,12 @@ CATKIN_SYMLINK_INSTALL:BOOL=OFF
 //List of ';' separated packages to build
 CATKIN_WHITELIST_PACKAGES:STRING=
 
+//Path to a file.
+CHOLMOD_INCLUDE_DIR:PATH=CHOLMOD_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+CHOLMOD_LIBRARY:FILEPATH=CHOLMOD_LIBRARY-NOTFOUND
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -327,6 +333,12 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 CPPZMQ_INCLUDE_DIRS:PATH=/usr/include
 
 //Path to a file.
+CSPARSE_INCLUDE_DIR:PATH=CSPARSE_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+CSPARSE_LIBRARY:FILEPATH=CSPARSE_LIBRARY-NOTFOUND
+
+//Path to a file.
 CURL_INCLUDE_DIR:PATH=/usr/include/x86_64-linux-gnu
 
 //Path to a library.
@@ -341,6 +353,9 @@ DL_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libdl.so
 //Path to a program.
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
+//Path to a file.
+EIGEN3_INCLUDE_DIR:PATH=/usr/include/eigen3
+
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 
@@ -349,6 +364,9 @@ EMPY_SCRIPT:STRING=/usr/bin/empy
 
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
+
+//Dependencies for the target
+ExplorationPlugins_LIB_DEPENDS:STATIC=general;RobotNavigator;general;MapInflationTool;general;RobotOperator;general;costmap_2d;general;layers;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/liblaser_geometry.so;general;/opt/ros/melodic/lib/libtf.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;tf2_ros;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;tf2;general;voxel_grid;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
 
 //Path to a file.
 FreeImage_INCLUDE_DIRS:PATH=/usr/include
@@ -400,6 +418,12 @@ LSB_FOUND:BOOL=TRUE
 
 //Path to a program.
 LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
+
+//Dependencies for target
+MapInflationTool_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+MultiMapper_LIB_DEPENDS:STATIC=general;OpenKarto;general;SelfLocalizer;general;/opt/ros/melodic/lib/libtf.so;general;tf2_ros;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;tf2;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
@@ -641,6 +665,9 @@ OGRE_Volume_LIBRARY_REL:FILEPATH=/usr/lib/x86_64-linux-gnu/libOgreVolume.so
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/share/OpenCV
 
+//Dependencies for the target
+OpenKarto_LIB_DEPENDS:STATIC=general;tbb;general;atomic;
+
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
@@ -695,6 +722,12 @@ Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libprotoc.so
 //Path to a library.
 RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 
+//Dependencies for the target
+RobotNavigator_LIB_DEPENDS:STATIC=general;MapInflationTool;general;RobotOperator;general;costmap_2d;general;layers;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/liblaser_geometry.so;general;/opt/ros/melodic/lib/libtf.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;tf2_ros;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;tf2;general;voxel_grid;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Dependencies for the target
+RobotOperator_LIB_DEPENDS:STATIC=general;costmap_2d;general;layers;general;/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so;general;/opt/ros/melodic/lib/liblaser_geometry.so;general;/opt/ros/melodic/lib/libtf.so;general;/opt/ros/melodic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/melodic/lib/libroslib.so;general;/opt/ros/melodic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml2.so;general;tf2_ros;general;/opt/ros/melodic/lib/libactionlib.so;general;/opt/ros/melodic/lib/libmessage_filters.so;general;tf2;general;voxel_grid;general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+
 //The directory containing a CMake configuration file for SDFormat.
 SDFormat_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/sdformat
 
@@ -721,6 +754,9 @@ SITE:STRING=TurtlePC-04
 
 //Path to a library.
 SWSCALE_LIBRARY_swscale:FILEPATH=/usr/lib/x86_64-linux-gnu/libswscale.so
+
+//Dependencies for target
+SelfLocalizer_LIB_DEPENDS:STATIC=
 
 //The directory containing a CMake configuration file for Simbody.
 Simbody_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/simbody
@@ -1165,6 +1201,72 @@ my_nodes_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/my_nodes
 my_nodes_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/my_nodes
 
 //Value Computed by CMake
+nav2d_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d
+
+//Value Computed by CMake
+nav2d_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d
+
+//Value Computed by CMake
+nav2d_exploration_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_exploration
+
+//Value Computed by CMake
+nav2d_exploration_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_exploration
+
+//Value Computed by CMake
+nav2d_karto_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_karto
+
+//Value Computed by CMake
+nav2d_karto_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_karto
+
+//Value Computed by CMake
+nav2d_localizer_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_localizer
+
+//The directory containing a CMake configuration file for nav2d_localizer.
+nav2d_localizer_DIR:PATH=/home/turtlepc-04/catkin_ws/devel/share/nav2d_localizer/cmake
+
+//Value Computed by CMake
+nav2d_localizer_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_localizer
+
+//Value Computed by CMake
+nav2d_msgs_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_msgs
+
+//The directory containing a CMake configuration file for nav2d_msgs.
+nav2d_msgs_DIR:PATH=/home/turtlepc-04/catkin_ws/devel/share/nav2d_msgs/cmake
+
+//Value Computed by CMake
+nav2d_msgs_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_msgs
+
+//Value Computed by CMake
+nav2d_navigator_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_navigator
+
+//The directory containing a CMake configuration file for nav2d_navigator.
+nav2d_navigator_DIR:PATH=/home/turtlepc-04/catkin_ws/devel/share/nav2d_navigator/cmake
+
+//Value Computed by CMake
+nav2d_navigator_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_navigator
+
+//Value Computed by CMake
+nav2d_operator_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_operator
+
+//The directory containing a CMake configuration file for nav2d_operator.
+nav2d_operator_DIR:PATH=/home/turtlepc-04/catkin_ws/devel/share/nav2d_operator/cmake
+
+//Value Computed by CMake
+nav2d_operator_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_operator
+
+//Value Computed by CMake
+nav2d_remote_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_remote
+
+//Value Computed by CMake
+nav2d_remote_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_remote
+
+//Value Computed by CMake
+nav2d_tutorials_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation_2d/nav2d_tutorials
+
+//Value Computed by CMake
+nav2d_tutorials_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/navigation_2d/nav2d_tutorials
+
+//Value Computed by CMake
 nav_core_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/navigation/nav_core
 
 //The directory containing a CMake configuration file for nav_core.
@@ -1229,6 +1331,12 @@ pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for resource_retriever.
 resource_retriever_DIR:PATH=/opt/ros/melodic/share/resource_retriever/cmake
+
+//Value Computed by CMake
+ros_autonomous_slam_BINARY_DIR:STATIC=/home/turtlepc-04/catkin_ws/build/ros_autonomous_slam
+
+//Value Computed by CMake
+ros_autonomous_slam_SOURCE_DIR:STATIC=/home/turtlepc-04/catkin_ws/src/ros_autonomous_slam
 
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/melodic/share/rosbag/cmake
@@ -1881,7 +1989,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=58
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=59
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1930,6 +2038,8 @@ COMPILER_SUPPORTS_CXX11:INTERNAL=1
 CURL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CURL_LIBRARY
 CURL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: EIGEN3_INCLUDE_DIR
+EIGEN3_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Details about finding AVCODEC
 FIND_PACKAGE_MESSAGE_DETAILS_AVCODEC:INTERNAL=[true][v()]
 //Details about finding AVDEVICE
@@ -1944,6 +2054,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_Bullet:INTERNAL=[/usr/lib/x86_64-linux-gnu/libBulle
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurl.so][/usr/include/x86_64-linux-gnu][v7.58.0()]
 //Details about finding DL
 FIND_PACKAGE_MESSAGE_DETAILS_DL:INTERNAL=[true][v()]
+//Details about finding Eigen3
+FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[/usr/include/eigen3][TRUE][v(2.91.0)]
 //Details about finding GTS
 FIND_PACKAGE_MESSAGE_DETAILS_GTS:INTERNAL=[true][v()]
 //Details about finding JSONCPP
@@ -2377,6 +2489,40 @@ SWSCALE_libswscale_VERSION:INTERNAL=
 Simbody_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Simbody_STATIC_LIBRARIES
 Simbody_STATIC_LIBRARIES-ADVANCED:INTERNAL=1
+TBB_CFLAGS:INTERNAL=
+TBB_CFLAGS_I:INTERNAL=
+TBB_CFLAGS_OTHER:INTERNAL=
+TBB_FOUND:INTERNAL=1
+TBB_INCLUDEDIR:INTERNAL=/usr/include
+TBB_INCLUDE_DIRS:INTERNAL=
+TBB_LDFLAGS:INTERNAL=-ltbb;-latomic
+TBB_LDFLAGS_OTHER:INTERNAL=
+TBB_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+TBB_LIBRARIES:INTERNAL=tbb;atomic
+TBB_LIBRARY_DIRS:INTERNAL=
+TBB_LIBS:INTERNAL=
+TBB_LIBS_L:INTERNAL=
+TBB_LIBS_OTHER:INTERNAL=
+TBB_LIBS_PATHS:INTERNAL=
+TBB_PREFIX:INTERNAL=/usr
+TBB_STATIC_CFLAGS:INTERNAL=
+TBB_STATIC_CFLAGS_I:INTERNAL=
+TBB_STATIC_CFLAGS_OTHER:INTERNAL=
+TBB_STATIC_INCLUDE_DIRS:INTERNAL=
+TBB_STATIC_LDFLAGS:INTERNAL=-ltbb;-latomic
+TBB_STATIC_LDFLAGS_OTHER:INTERNAL=
+TBB_STATIC_LIBDIR:INTERNAL=
+TBB_STATIC_LIBRARIES:INTERNAL=tbb;atomic
+TBB_STATIC_LIBRARY_DIRS:INTERNAL=
+TBB_STATIC_LIBS:INTERNAL=
+TBB_STATIC_LIBS_L:INTERNAL=
+TBB_STATIC_LIBS_OTHER:INTERNAL=
+TBB_STATIC_LIBS_PATHS:INTERNAL=
+TBB_VERSION:INTERNAL=2017~U7
+TBB_tbb_INCLUDEDIR:INTERNAL=
+TBB_tbb_LIBDIR:INTERNAL=
+TBB_tbb_PREFIX:INTERNAL=
+TBB_tbb_VERSION:INTERNAL=
 TINYXML2_CFLAGS:INTERNAL=
 TINYXML2_CFLAGS_I:INTERNAL=
 TINYXML2_CFLAGS_OTHER:INTERNAL=
@@ -2602,6 +2748,7 @@ __pkg_config_arguments_GTS:INTERNAL=gts
 __pkg_config_arguments_JSONCPP:INTERNAL=jsoncpp
 __pkg_config_arguments_OGRE_PKGC:INTERNAL=OGRE
 __pkg_config_arguments_SWSCALE:INTERNAL=libswscale
+__pkg_config_arguments_TBB:INTERNAL=tbb
 __pkg_config_arguments_TINYXML2:INTERNAL=tinyxml2
 __pkg_config_arguments_UUID:INTERNAL=uuid
 __pkg_config_arguments_YAML:INTERNAL=yaml-0.1
@@ -2619,6 +2766,7 @@ __pkg_config_checked_GTS:INTERNAL=1
 __pkg_config_checked_JSONCPP:INTERNAL=1
 __pkg_config_checked_OGRE_PKGC:INTERNAL=1
 __pkg_config_checked_SWSCALE:INTERNAL=1
+__pkg_config_checked_TBB:INTERNAL=1
 __pkg_config_checked_TINYXML2:INTERNAL=1
 __pkg_config_checked_UUID:INTERNAL=1
 __pkg_config_checked_YAML:INTERNAL=1
