@@ -1,8 +1,0 @@
-prefix=/home/turtlepc-04/catkin_ws/install
-
-Name: my_nodes
-Description: Description of my_nodes
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime actionlib_msgs

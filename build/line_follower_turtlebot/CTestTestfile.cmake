@@ -1,8 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/turtlepc-04/catkin_ws/src/line_follower_turtlebot
-# Build directory: /home/turtlepc-04/catkin_ws/build/line_follower_turtlebot
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-add_test(_ctest_line_follower_turtlebot_rostest_test_test_detect.launch "/home/turtlepc-04/catkin_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python2" "/opt/ros/melodic/share/catkin/cmake/test/run_tests.py" "/home/turtlepc-04/catkin_ws/build/test_results/line_follower_turtlebot/rostest-test_test_detect.xml" "--return-code" "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/turtlepc-04/catkin_ws/src/line_follower_turtlebot --package=line_follower_turtlebot --results-filename test_test_detect.xml --results-base-dir \"/home/turtlepc-04/catkin_ws/build/test_results\" /home/turtlepc-04/catkin_ws/src/line_follower_turtlebot/test/test_detect.launch ")
-add_test(_ctest_line_follower_turtlebot_rostest_test_test_navig.launch "/home/turtlepc-04/catkin_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python2" "/opt/ros/melodic/share/catkin/cmake/test/run_tests.py" "/home/turtlepc-04/catkin_ws/build/test_results/line_follower_turtlebot/rostest-test_test_navig.xml" "--return-code" "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/turtlepc-04/catkin_ws/src/line_follower_turtlebot --package=line_follower_turtlebot --results-filename test_test_navig.xml --results-base-dir \"/home/turtlepc-04/catkin_ws/build/test_results\" /home/turtlepc-04/catkin_ws/src/line_follower_turtlebot/test/test_navig.launch ")
