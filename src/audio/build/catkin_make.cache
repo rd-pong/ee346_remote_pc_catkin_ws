@@ -1,2 +1,0 @@
-audio_common/audio_capture:audio_common/audio_common:audio_common/audio_common_msgs:audio_common/audio_play:audio_common/sound_play
--DCATKIN_DEVEL_PREFIX=/home/turtlepc-04/catkin_ws/src/audio/devel -DCMAKE_INSTALL_PREFIX=/home/turtlepc-04/catkin_ws/src/audio/install -G Unix Makefiles
