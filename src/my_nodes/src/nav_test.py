@@ -55,22 +55,33 @@ class NavTest():
         # that was used to launch RViz.
         locations = OrderedDict();
 
+        # ---------------4 POINTS-----------------------------------------------------------
         # Locations for bigger simulation map
         # locations['PIT STOP 1'] = Pose(Point(1.6, -2.5, 0.000), Quaternion(0.000, 0.000, 0.733, 0.680))
         # locations['PIT STOP 2'] = Pose(Point(1.7, 2.5, 0.000), Quaternion(0.000, 0.000, 0.223, 0.975))
         # locations['PIT STOP 3'] = Pose(Point(-3.3, 2.5, 0.000), Quaternion(0.000, 0.000, -0.670, 0.743))
         # locations['PIT STOP 4'] = Pose(Point(-3.5, -2.6, 0.000), Quaternion(0.000, 0.000, 0.786, 0.618))
         
-        # Locations for real lab environment
+        # # Locations for real lab environment (low precision) real1
         # locations['PIT STOP 1'] = Pose(Point(0.5, 1, 0.000), Quaternion(0.000, 0.000, 0.733, 0.680))
         # locations['PIT STOP 1.5'] = Pose(Point(1.7, 1.8, 0.000), Quaternion(0.000, 0.000, -0.02, 1))
-        locations['PIT STOP 2'] = Pose(Point(4.43, 1.08, 0.000), Quaternion(0.000, 0.000, 0.75, 0))
-        # locations['SCENIC SPOT 0.5'] = Pose(Point(3.4, 1.08, 0.000), Quaternion(0.000, 0.000, 0.75, 0))
-        locations['SCENIC SPOT 1'] = Pose(Point(2.9, 1.08, 0.000), Quaternion(0.000, 0.000, 0.75, 0))
-        locations['PIT STOP 3'] = Pose(Point(4.43, 5.15, 0.000), Quaternion(0.000, 0.000, 0.75, 0.6))
-        locations['SCENIC SPOT 2'] = Pose(Point(4.69, 4.14, 0.000), Quaternion(0.000, 0.000, 0.99, 0))
-        locations['PIT STOP 4'] = Pose(Point(0.47, 5.05, 0.000), Quaternion(0.000, 0.000, 0.75, -3))
+        # locations['PIT STOP 2'] = Pose(Point(4.43, 1.08, 0.000), Quaternion(0.000, 0.000, 0.75, 0))
+        # # locations['SCENIC SPOT 0.5'] = Pose(Point(3.4, 1.08, 0.000), Quaternion(0.000, 0.000, 0.75, 0))
+        # locations['SCENIC SPOT 1'] = Pose(Point(2.9, 1.08, 0.000), Quaternion(0.000, 0.000, 0.75, 0))
+        # locations['PIT STOP 3'] = Pose(Point(4.43, 5.15, 0.000), Quaternion(0.000, 0.000, 0.75, 0.6))
+        # locations['SCENIC SPOT 2'] = Pose(Point(4.69, 4.14, 0.000), Quaternion(0.000, 0.000, 0.99, 0))
+        # locations['PIT STOP 4'] = Pose(Point(0.47, 5.05, 0.000), Quaternion(0.000, 0.000, 0.75, -3))
     
+        # Locations for real lab environment (HI precision) real4
+        # locations['PIT STOP 1'] = Pose(Point(0.359, -0.370, 0.000), Quaternion(0.000, 0.000, -0.001, 0.99))
+        # locations['PIT STOP 1.5'] = Pose(Point(1.080, 0.677, 0.000), Quaternion(0.000, 0.000, -0.015, 0.9998))
+        locations['PIT STOP 2'] = Pose(Point(4.144, -0.175, 0.000), Quaternion(0.000, 0.000, 0.9998, 0.016))
+        locations['SCENIC SPOT 0.5'] = Pose(Point(2.730, -0.102, 0.000), Quaternion(0.000, 0.000, 0.999, 0.008))
+        locations['SCENIC SPOT 1'] = Pose(Point(2.847, -0.081, 0.000), Quaternion(0.000, 0.000, 0.9999,  0.027))
+        locations['PIT STOP 3'] = Pose(Point(4.34, 3.960, 0.000), Quaternion(0.000, 0.000, -0.7271, 0.686))
+        locations['SCENIC SPOT 2'] = Pose(Point(4.294,  3.0922, 0.000), Quaternion(0.000, 0.000, 0.9987, -0.049))
+        locations['PIT STOP 4'] = Pose(Point(0, 4.2, 0.000), Quaternion(0.000, 0.000, -0.031, 0.999))
+        # --------------------------------------------------------------------------
 
         # Publisher to manually control the robot (e.g. to stop it)
         self.cmd_vel_pub = rospy.Publisher('cmd_vel', Twist)
