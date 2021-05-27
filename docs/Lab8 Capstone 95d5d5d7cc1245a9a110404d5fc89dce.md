@@ -1,3 +1,7 @@
+layout: page
+title: "TEST"
+permalink: /test/
+
 # Lab8 Capstone
 
 ![Lab8%20Capstone%2095d5d5d7cc1245a9a110404d5fc89dce/Untitled.png](Lab8%20Capstone%2095d5d5d7cc1245a9a110404d5fc89dce/Untitled.png)
