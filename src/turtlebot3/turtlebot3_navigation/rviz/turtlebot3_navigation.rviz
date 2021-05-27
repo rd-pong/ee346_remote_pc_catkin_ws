@@ -303,7 +303,7 @@ Visualization Manager:
           Topic: /move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
-      Enabled: false
+      Enabled: true
       Name: Local Map
     - Alpha: 1
       Arrow Length: 0.05000000074505806
@@ -399,7 +399,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -6.285823822021484
+      Angle: -6.29582405090332
       Class: rviz/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -436,4 +436,4 @@ Window Geometry:
     collapsed: true
   Width: 1258
   X: 305
-  Y: 46
+  Y: 27
