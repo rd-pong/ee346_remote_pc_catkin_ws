@@ -2,6 +2,18 @@ layout: page
 title: "TEST"
 permalink: /test/
 
+---
+layout: page
+title: "TEST"
+permalink: /test/
+date:       2019-03-06
+author:     RD
+tags:
+    - Homework
+    - Digital Image Processing
+---
+
+
 # Lab8 Capstone
 
 ![Lab8%20Capstone%2095d5d5d7cc1245a9a110404d5fc89dce/Untitled.png](Lab8%20Capstone%2095d5d5d7cc1245a9a110404d5fc89dce/Untitled.png)
