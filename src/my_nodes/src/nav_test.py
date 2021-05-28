@@ -77,12 +77,12 @@ class NavTest():
     
         # Locations for real lab environment (HI precision) real4
         # # locations['PIT STOP 1'] = Pose(Point(0.7, -0.85, 0.000), Quaternion(0.000, 0.000, 0, 1))
-        locations['PIT STOP 1.5'] = Pose(Point(1, 0.677, 0.000), Quaternion(0.000, 0.000, -0.015, 0.9998))
+        locations['PIT STOP 1.5'] = Pose(Point(0.98, 0.69, 0.000), Quaternion(0.000, 0.000, -0.015, 0.9998))
         locations['PIT STOP 2'] = Pose(Point(4.144, -0.175, 0.000), Quaternion(0.000, 0.000, 0.9998, 0.016))
         locations['SCENIC SPOT 0.5'] = Pose(Point(2.730, -0.102, 0.000), Quaternion(0.000, 0.000, 0.999, 0.008))
         locations['SCENIC SPOT 1'] = Pose(Point(2.847, -0.081, 0.000), Quaternion(0.000, 0.000, 0.9999,  0.027))
         locations['PIT STOP 3'] = Pose(Point(4.33, 3.85, 0.000), Quaternion(0.000, 0.000, 0.898, -0.4386))
-        # # locations['SCENIC SPOT 2'] = Pose(Point(4.294,  3.0922, 0.000), Quaternion(0.000, 0.000, 0.9987, -0.049))
+        locations['SCENIC SPOT 2'] = Pose(Point(4.294,  3.0922, 0.000), Quaternion(0.000, 0.000, 0.9987, -0.049))
         locations['PIT STOP 4'] = Pose(Point(0.2, 4, 0.000), Quaternion(0.000, 0.000, -0.031, 0.999))
         # --------------------------------------------------------------------------
 
