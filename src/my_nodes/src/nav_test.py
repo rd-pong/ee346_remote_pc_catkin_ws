@@ -77,13 +77,13 @@ class NavTest():
     
         # Locations for real lab environment (HI precision) real4
         # # locations['PIT STOP 1'] = Pose(Point(0.7, -0.85, 0.000), Quaternion(0.000, 0.000, 0, 1))
-        locations['PIT STOP 1.5'] = Pose(Point(0.98, 0.69, 0.000), Quaternion(0.000, 0.000, -0.015, 0.9998))
-        locations['PIT STOP 2'] = Pose(Point(4.144, -0.175, 0.000), Quaternion(0.000, 0.000, 0.9998, 0.016))
-        locations['SCENIC SPOT 0.5'] = Pose(Point(2.730, -0.102, 0.000), Quaternion(0.000, 0.000, 0.999, 0.008))
+        # locations['PIT STOP 1.5'] = Pose(Point(0.97, 0.69, 0.000), Quaternion(0.000, 0.000, -0.015, 0.9998))
+        locations['PIT STOP 2'] = Pose(Point(4.08, -0.2, 0.000), Quaternion(0.000, 0.000, 0.9998, 0.016))
+        # locations['SCENIC SPOT 0.5'] = Pose(Point(2.730, -0.102, 0.000), Quaternion(0.000, 0.000, 0.999, 0.008))
         locations['SCENIC SPOT 1'] = Pose(Point(2.847, -0.081, 0.000), Quaternion(0.000, 0.000, 0.9999,  0.027))
         locations['PIT STOP 3'] = Pose(Point(4.33, 3.85, 0.000), Quaternion(0.000, 0.000, 0.898, -0.4386))
         locations['SCENIC SPOT 2'] = Pose(Point(4.294,  3.0922, 0.000), Quaternion(0.000, 0.000, 0.9987, -0.049))
-        locations['PIT STOP 4'] = Pose(Point(0.2, 4, 0.000), Quaternion(0.000, 0.000, -0.031, 0.999))
+        # locations['PIT STOP 4'] = Pose(Point(0.2, 4, 0.000), Quaternion(0.000, 0.000, -0.031, 0.999))
         # --------------------------------------------------------------------------
 
         # Publisher to manually control the robot (e.g. to stop it)
@@ -200,15 +200,15 @@ class NavTest():
                   rospy.loginfo("Goal failed with error code: " + str(goal_states[state]))
             
             # How long have we been running?
-            running_time = rospy.Time.now() - start_time
-            running_time = running_time.secs / 60.0
+            # running_time = rospy.Time.now() - start_time
+            # running_time = running_time.secs / 60.0
             
             # Print a summary success/failure, distance traveled and time elapsed
             rospy.loginfo("Success so far: " + str(n_successes) + "/" + 
                           str(n_goals) + " = " + 
                           str(100 * n_successes/n_goals) + "%")
-            rospy.loginfo("Running time: " + str(trunc(running_time, 1)) + 
-                          " min Distance: " + str(trunc(distance_traveled, 1)) + " m")
+            # rospy.loginfo("Running time: " + str(trunc(running_time, 1)) + 
+            #               " min Distance: " + str(trunc(distance_traveled, 1)) + " m")
             # soundhandle.playWave('stop.m4a',self.rest_time)
             rospy.sleep(self.rest_time)
             
