@@ -1,6 +1,9 @@
 #!/usr/bin/env python
-## Simple talker demo that listens to std_msgs/Strings published 
-## to the 'chatter' topic
+# Read AR code out loud when detected AlvarMarkers
+
+## Changed from 'Simple talker demo that listens to std_msgs/Strings published 
+## to the 'chatter' topic'
+
 
 import rospy
 import os
