@@ -249,7 +249,6 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 <p align="center"><img src="imgs\sim-result.gif" alt="sim-result" style="zoom:80%;" /></p>
 
-
 ## Round 1
 
 [Bilibili](https://www.bilibili.com/video/BV16V411x7Sd/)
@@ -266,7 +265,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
   width="560"
   height="315"
   frameborder="0"
-  allowfullscreen=""
+  allowfullscreen="true"
   style="
     position: absolute;
     top:0;
@@ -276,8 +275,6 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 ">
 </iframe>
 </div>
-
-
 
 # Conclusion
 
