@@ -319,3 +319,5 @@ Yu Xiang: Parameter adjusting(40%)
 [VISIT HERE](https://www.notion.so/Shared-Lab-Notes-a0929b1c3a5e4e8796cf50cf06eb4f1d)
 
 These pages note down how we approached each lab, including tweaks, links, tutorials we have used. These are just our scratch papers rather than detailed roadmaps. Feel free to get some inspiration.
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Freadypeng.github.io%2Fee346_remote_pc_catkin_ws%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
