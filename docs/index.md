@@ -82,7 +82,7 @@ This section will briefly introduce what is packed in the git repository. The or
 
 We first built maps for the racing environment using GMapping. After controlling the robot running around the competition field, we can get maps as showing below: (Left for simulation, Right for real lab environment)
 
-<p align="center"><img src="imgs\maps.png" alt="global_map" style="zoom:90%;" /></p>
+<p align="center"><img src="imgs\maps.png" alt="global_map" style="zoom:80%;" /></p>
 
 
 The final map is not very precise because of the LiDAR's deviation. We also find that the network also influence the map building. If too many people using the network in the same time, your robot may face packet loss so that the map is incorrect.
@@ -94,7 +94,7 @@ The final map is not very precise because of the LiDAR's deviation. We also find
 
 There are two tabs in Rviz panel: 2D Pose Estimate and 2D Nav Goal. When we put the Turtlebot on the filed, we need use the 2D estimate to tell the robot its initial position first. Then we use 2D Nav Goal to give it a goal point. The robot can reach that point after planning the path.
 
-![nav2](imgs\nav2.png)
+<p align="center"><img src="imgs\nav2.png" alt="nav2" style="zoom:80%;" /></p>
 
 We can use the 2D Nav Goal in Rviz to make our robot reach a certain point in map. During this process, we can use `rostopic echo /move_base/goal` to find the goal coordinate relative to our map. After finding the suitable coordinates, we can record them and put in `nav_test.py`.
 
@@ -103,7 +103,8 @@ We can use the 2D Nav Goal in Rviz to make our robot reach a certain point in ma
 Similarly, we can use the below code in CLI to publish a goal instead of using 2D Nav Goal.
 
 ```python
-rostopic pub /move_base/goal move_base_msgs/MoveBaseActionGoal "header:
+rostopic pub /move_base/goal move_base_msgs/MoveBaseActionGoal 
+"header:
   seq: 0
   stamp:
     secs: 0
@@ -174,7 +175,7 @@ Using a lower resolution make the image transmission more robust. And it reduce 
 
 Round 1 is the fixed point path finding. We need to set the points in advance using 2D Nav Goal in rviz. Record the `move_base` message and write them in our navigation program. We set some middle points on the map in order to having a better performance of path finding and AR-tag recognition. The path of round 1 is PS1->1->2->3->4->5, and it's showing here:
 
-<p align="center"><img src="imgs\round1.png" alt="round1" style="zoom:100%;" /></p>
+<p align="center"><img src="imgs\round1.png" alt="round1" style="zoom:80%;" /></p>
 
 
 ## 6. Round 2
