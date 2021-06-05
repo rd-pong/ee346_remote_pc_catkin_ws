@@ -1,12 +1,12 @@
 <h1 style="text-align: center"> Capstone Competition </h1>
 <div style="text-align: center"><small>Ruidi PENG | Xiang YU</small></div>
 
-\---
+---
 
 
 * TOC
 {:toc}
-\---
+---
 
 # Introduction
 
