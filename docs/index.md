@@ -1,14 +1,13 @@
 <h1 style="text-align: center"> Capstone Competition </h1>
 <div style="text-align: center"><small>Ruidi PENG | Xiang YU</small></div>
 
-
-
-[toc]
+\* TOC {:toc}
 
 # Introduction
 
 In this competition, our goal is to navigate our robot racing around several points as fast as possible while recognizing the AR codes. To start with, a global map is built using Adaptive Monte Carlo Localization (AMCL) and Gmapping. Then, we need to plan the path by setting some points in our local map. Turtlebot is navigated to these points using `move_base` while reading out AR tags it sees.
-     ![image-20210603161112124](imgs\comp.png)
+
+     <div align=center><img src="imgs\comp.png" alt="image-20210603161112124" style="zoom:40%;" />
 
 # Competition Rules
 
@@ -22,7 +21,7 @@ The second round is setting the path by ourselves and reach as many targets as p
 
 In this project, we choose turtlebot3-burger as our robot. You can find the details [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/).
 
-![turtlebot3](imgs\turtlebot3.png)
+<div align=center><img src="imgs\turtlebot3.png" alt="turtlebot3" style="zoom:50%;" />
 
 Turtlebot3 is a small, low cost, fully programmable, ROS-based mobile robot. It combined with chassis, motor, wheels, OpenCR board, computer(Raspberry Pi), sensor(LiDAR, camera), battery.
 
@@ -32,7 +31,9 @@ This robot can complete many project, which includes: movement operation, forwar
 
 In this competition, LiDAR and camera will be used. They collect data and send to the Raspberry Pi. The the Raspberry Pi will communicate with remote PC with the help of Wi-Fi.
 
-The laser distance sensor we use is LDS-01. It is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation. More details could be found [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_01/).![lidar](imgs\lidar.png)
+The laser distance sensor we use is LDS-01. It is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation. More details could be found [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_lds_01/).
+
+<div align=center><img src="imgs\lidar.png" alt="lidar" style="zoom:50%;" />
 
 Our camera is a simple csi camera. We only need to recognize the AR code so there is no need to use nicer and more expensive camera. After calibration, we can use it for AR code detection.
 
@@ -40,7 +41,7 @@ Our camera is a simple csi camera. We only need to recognize the AR code so ther
 
 We use Raspberry Pi as the on-board computer for Turtlebot3. It's a very small computer with the size of a credit card. We install Ubuntu 18.04 and ROS Melodic on it. The communication between Raspberry Pi and remote PC is based on Wi-Fi. We can use `ssh pi@[raspberry pi address]`to connect to Raspberry Pi under the same network. It can send command to OpenCR through the USB host, and OpenCR give the motor signal to control robots speed and direction.
 
-![rasp](imgs\rasp.jpg)
+<div align=center><img src="imgs\rasp.jpg" alt="rasp" style="zoom:80%;" />
 
 For more info on Raspberry Pi set up, read [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/sbc_setup/#sbc-setup).
 
@@ -66,13 +67,15 @@ This section will briefly introduce what is packed in the git repository. The or
 
 # Design and Implementation
 
-## 1. Mapping[todo]
+## 1. Mapping
 
-We first built maps for the racing environment using GMapping. After control your robot running around the competition field, the final map can be build as showing below:
+We first built maps for the racing environment using GMapping. After controlling the robot running around the competition field, we can get maps as showing below: (Left for simulation, Right for real lab environment)
 
-![global_map](imgs\global_map.png)
+<div align=center><img src="imgs\maps.png" alt="global_map" style="zoom:90%;" />
 
-The final map is not very precise because of the LiDAR's deviation. We also find that the network also influence the map building. If too many people using the network in the same time, your robot may face packet loss so that the map is incorrect. 
+The final map is not very precise because of the LiDAR's deviation. We also find that the network also influence the map building. If too many people using the network in the same time, your robot may face packet loss so that the map is incorrect.
+
+<div align=center><img src="imgs\map-wrong.png" alt="global_map" style="zoom:60%;" />
 
 ## 2. Navigation
 
@@ -140,15 +143,15 @@ GMapping parameters mainly influence the mapping resolution and map maximum size
 
 When we doing navigation, we need to calculate the cost all the time, so we can also change the parameters in `local_costmap_params.yaml` . `resolution` is the size of the minimum unit of cost map. We first changed it to 0.02 as same as our global map. But the final experiment shows 0.05 is easier for our robot to get out of  the narrow corridor.
 
-![pa](imgs\pa.png)
+<div align=center><img src="imgs\pa.png" alt="pa" style="zoom:80%;" />
 
 ## 4. AR Tag Detection
 
 This is an independent task. We can search the AR tag and make a sound of corresponding numbers. The method is in `ar_track_alver`. We get the AR tag id and use `sound_play`to make sound. We wrote a [listener](https://github.com/readypeng/ee346_remote_pc_catkin_ws/blob/master/src/my_nodes/src/listener.py) to collect all AR code detected and read them out. Open the rviz with following command and we can find the recognition result.
 
-![img](imgs/tag1.gif)
+<div align=center><img src="imgs/tag1.gif" alt="img" style="zoom:80%;" />
 
-![img](imgs/tag2.png)
+<div align=center><img src="imgs/tag2.png" alt="img" style="zoom:80%;" />
 
 Using a lower resolution make the image transmission more robust. And it reduce complexity so that the program does not overheat the remote PC.
 
@@ -156,7 +159,7 @@ Using a lower resolution make the image transmission more robust. And it reduce 
 
 Round 1 is the fixed point path finding. We need to set the points in advance using 2D Nav Goal in rviz. Record the `move_base` message and write them in our navigation program. We set some middle points on the map in order to having a better performance of path finding and AR-tag recognition. The path of round 1 is PS1->1->2->3->4->5, and it's showing here:
 
-![round1](imgs\round1.png)
+<div align=center><img src="imgs\round1.png" alt="round1" style="zoom:100%;" />
 
 ## 6. Round 2
 
@@ -166,7 +169,7 @@ Round 2 is a self design task. For more scores we choose PS2 and PS3 as two basi
 
 The navigation program may plan the path automatically, but when we make the robot face right (the narrow channel direction), it is difficult for the robot to get out because the LiDRA deviation and AMCL resolution make effect the judgment of robot. Near the channel a small raise wall will show in local map so the robot cannot go forward, and actually there is nothing. When we try to change the direction of robot, the planning path changes and  avoids the raising wall. 
 
-![trick](imgs\trick.png)
+<div align=center><img src="imgs\trick.png" alt="trick" style="zoom:80%;" />
 
 # How to Test Our Code
 
@@ -220,9 +223,15 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 `rosrun my_nodes nav_test.py`
 
-### Simulation Result
+# Demo
 
-![sim-result](imgs\sim-result.gif)
+## Simulation
+
+<div align=center><img src="imgs\sim-result.gif" alt="sim-result" style="zoom:80%;" />
+
+## Round 1
+
+<iframe src="//player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 # Conclusion
 
@@ -236,3 +245,8 @@ Yu Xiang: Parameter adjusting(40%)
 
 [Star us on Github](https://github.com/readypeng/ee346_remote_pc_catkin_ws)
 
+## For more of our notes
+
+[VISIT HERE](https://www.notion.so/Shared-Lab-Notes-a0929b1c3a5e4e8796cf50cf06eb4f1d)
+
+These pages note down how we approached each lab, including tweaks, links, tutorials we have used. These are just our scratch papers rather than detailed roadmaps. Feel free to get some inspiration.
