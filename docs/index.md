@@ -253,6 +253,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 [Bilibili](https://www.bilibili.com/video/BV16V411x7Sd/)
 
+<!---
 <div class="video-container" style="
     position: relative;
     padding-bottom:56.25%;
@@ -275,6 +276,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 ">
 </iframe>
 </div>
+--->
 
 <div class="video-container" style="
     position: relative;
@@ -298,7 +300,6 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 ">
 </iframe>
 </div>
-
 
 # Conclusion
 
