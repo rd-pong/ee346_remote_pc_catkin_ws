@@ -254,6 +254,8 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 [Bilibili](https://www.bilibili.com/video/BV16V411x7Sd/)
 
+<iframe src="//player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0TnrYdFzz5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Conclusion
