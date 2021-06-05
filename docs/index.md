@@ -30,12 +30,14 @@ The second round is setting the path by ourselves and reach as many targets as p
 In this project, we choose turtlebot3-burger as our robot. You can find the details [here](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/).
 
 <p align="center">
-	<img src="imgs\turtlebot3.png" alt="turtlebot3" style="zoom:50%;" />
+	<img src="imgs\turtlebot3.png" alt="turtlebot3" style="zoom:40%;" />
 </p>
 
-
-
 Turtlebot3 is a small, low cost, fully programmable, ROS-based mobile robot. It combined with chassis, motor, wheels, OpenCR board, computer(Raspberry Pi), sensor(LiDAR, camera), battery.
+
+<p align="center">
+	<img src="imgs\turtle_move.gif" alt="turtlebot3" style="zoom:40%;" />
+</p>
 
 This robot can complete many project, which includes: movement operation, forward, backward, left and right turn, rotate in place, GMapping algorithm map building, autonomous navigation. After installing camera for Raspberry Pi, we can use it to do some visual projects.
 
@@ -85,7 +87,7 @@ This section will briefly introduce what is packed in the git repository. The or
 
 We first built maps for the racing environment using GMapping. After controlling the robot running around the competition field, we can get maps as showing below: (Left for simulation, Right for real lab environment)
 
-<p align="center"><img src="imgs\maps.png" alt="global_map" style="zoom:80%;" /></p>
+<p align="center"><img src="imgs\maps.png" alt="global_map" style="zoom:70%;" /></p>
 
 
 The final map is not very precise because of the LiDAR's deviation. We also find that the network also influence the map building. If too many people using the network in the same time, your robot may face packet loss so that the map is incorrect.
@@ -169,7 +171,11 @@ This is an independent task. We can search the AR tag and make a sound of corres
 
 <p align="center"><img src="imgs/tag1.gif" alt="img" style="zoom:80%;" /></p>
 
+<!---
+
 <p align="center"><img src="imgs/tag2.png" alt="img" style="zoom:80%;" /></p>
+
+--->
 
 
 Using a lower resolution make the image transmission more robust. And it reduce complexity so that the program does not overheat the remote PC.
