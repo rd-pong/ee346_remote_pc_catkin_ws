@@ -301,6 +301,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 </iframe>
 </div>
 
+
 # Conclusion
 
 During this course, we have learned and used many robot controlling techniques, such as GMapping, AMCL, line following and AR tag detection. In the final competition, we didn't use line following to cross the narrow corridor because image transmission face serious package loss and long delay. The delay is OK for AR code detection but fatal for line following in the narrow corridor. Fortunately, AMCL works. In round 1 we missed the PS2 and the robot stopped at 1cm away from PS2. In round 2, we also missed PS2 once but succeed in the second loop. We have tried many times before only to find the stop point is a little unstable due to odometry and LDS error.
