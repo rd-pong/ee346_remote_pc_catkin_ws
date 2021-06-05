@@ -262,7 +262,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
     overflow:hidden;
 ">
 <iframe
-  src="https://player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1"
+  src="https://www.youtube.com/embed/ZYjYAT2g-1Q"
   width="560"
   height="315"
   frameborder="0"
@@ -275,6 +275,9 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
     height:100%;
 ">
 </iframe>
+</div>
+
+
 
 # Conclusion
 
