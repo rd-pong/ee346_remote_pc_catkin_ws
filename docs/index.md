@@ -1,13 +1,15 @@
 <h1 style="text-align: center"> Capstone Competition </h1>
 <div style="text-align: center"><small>Ruidi PENG | Xiang YU</small></div>
 
-\* TOC {:toc}
+
+
+{:toc}
 
 # Introduction
 
 In this competition, our goal is to navigate our robot racing around several points as fast as possible while recognizing the AR codes. To start with, a global map is built using Adaptive Monte Carlo Localization (AMCL) and Gmapping. Then, we need to plan the path by setting some points in our local map. Turtlebot is navigated to these points using `move_base` while reading out AR tags it sees.
 
-     <div align=center><img src="imgs\comp.png" alt="image-20210603161112124" style="zoom:40%;" />
+<div align=center><img src="imgs\comp.png" alt="image-20210603161112124" style="zoom:40%;" />
 
 # Competition Rules
 
