@@ -30,7 +30,7 @@ In this project, we choose turtlebot3-burger as our robot. You can find the deta
 	<img src="imgs\turtlebot3.png" alt="turtlebot3" style="zoom:50%;" />
 </p>
 
-   
+
 
 Turtlebot3 is a small, low cost, fully programmable, ROS-based mobile robot. It combined with chassis, motor, wheels, OpenCR board, computer(Raspberry Pi), sensor(LiDAR, camera), battery.
 
@@ -243,11 +243,14 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 ## Simulation
 
-<div align=center><img src="imgs\sim-result.gif" alt="sim-result" style="zoom:80%;" />
+<p align="center"><img src="imgs\sim-result.gif" alt="sim-result" style="zoom:80%;" /></p>
+
 
 ## Round 1
 
-<iframe src="//player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<div class="responsive-video-container">
+    <iframe src="//player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
 
 # Conclusion
 
