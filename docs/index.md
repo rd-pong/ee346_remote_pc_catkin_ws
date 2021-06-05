@@ -1,9 +1,12 @@
 <h1 style="text-align: center"> Capstone Competition </h1>
 <div style="text-align: center"><small>Ruidi PENG | Xiang YU</small></div>
 
+\---
+
 
 * TOC
 {:toc}
+\---
 
 # Introduction
 
@@ -249,13 +252,8 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 ## Round 1
 
-<div class="responsive-video-container">
 <iframe src="//player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
 
-<div class="responsive-video-container">
-  <iframe src="//player.bilibili.com/player.html?bvid=&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
 
 # Conclusion
 
