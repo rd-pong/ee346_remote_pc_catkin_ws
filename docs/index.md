@@ -283,19 +283,21 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
     height:0;
     overflow:hidden;
 ">
-<iframe width="560" height="315" src="https://player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1" scrolling="no" border="0" 
-frameborder="no" 
-framespacing="0" 
-allowfullscreen="true" 
-style="
+<iframe
+  src="https://player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1"
+  width="560"
+  height="315"
+  frameborder="0"
+  allowfullscreen="true"
+  style="
     position: absolute;
     top:0;
     left:0;
     width:100%;
-    height:100%;> 
+    height:100%;
+">
 </iframe>
 </div>
-
 
 
 # Conclusion
