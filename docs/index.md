@@ -193,7 +193,7 @@ Round 2 is a self design task. For more scores we choose PS2 and PS3 as two basi
 
 ## 7. Tricks
 
-The navigation program may plan the path automatically, but when we make the robot face right (the narrow channel direction), it is difficult for the robot to get out because the LiDRA deviation and AMCL resolution make effect the judgment of robot. Near the channel a small raise wall will show in local map so the robot cannot go forward, and actually there is nothing. When we try to change the direction of robot, the planning path changes and  avoids the raising wall. 
+The navigation program may plan the path automatically, but when we make the robot face right (the narrow channel direction), it is difficult for the robot to get out because the LiDRA deviation and AMCL resolution may affect the judgment of robot. Near the channel a small raise wall will show in local map so the robot cannot go forward, and actually there is nothing. When we try to change the direction of robot, the planning path changes and  avoids the raising wall. 
 
 <p align="center"><img src="imgs\trick.png" alt="trick" style="zoom:80%;" /></p>
 
