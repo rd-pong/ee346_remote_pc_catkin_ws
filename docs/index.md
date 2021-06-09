@@ -255,6 +255,12 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 <p align="center"><img src="imgs\sim-result.gif" alt="sim-result" style="zoom:80%;" /></p>
 
+## Getting Out of the Narrow Corridor
+
+[Bilibili](https://www.bilibili.com/video/BV1gq4y1L73o/)
+
+<p align="center"><img src="imgs/narrow-corr.gif" alt="img" style="zoom:90%;" /></p>
+
 ## Round 1
 
 [Bilibili](https://www.bilibili.com/video/BV16V411x7Sd/)
@@ -307,6 +313,32 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 </iframe>
 </div>
 
+## Round 2
+
+[Bilibili](https://www.bilibili.com/video/BV1ov411V7j6?)
+
+<div class="video-container" style="
+    position: relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+">
+<iframe
+  src="https://player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1"
+  width="560"
+  height="315"
+  frameborder="0"
+  allowfullscreen="true"
+  style="
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+">
+</iframe>
+</div>
 
 # Conclusion
 
