@@ -259,7 +259,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 [Bilibili](https://www.bilibili.com/video/BV1gq4y1L73o/)
 
-<p align="center"><img src="imgs/narrow-corr.gif" alt="img" style="zoom:90%;" /></p>
+<p align="center"><img src="imgs/narrow-corr.gif" alt="img" style="zoom:100%;" /></p>
 
 ## Round 1
 
@@ -315,7 +315,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
 
 ## Round 2
 
-[Bilibili](https://www.bilibili.com/video/BV1ov411V7j6?)
+[Bilibili](https://www.bilibili.com/video/BV1ov411V7j6)
 
 <div class="video-container" style="
     position: relative;
@@ -325,7 +325,7 @@ Alternatively, you can use our map. Simply put `map-capstone-sim.pgm & .yaml` in
     overflow:hidden;
 ">
 <iframe
-  src="https://player.bilibili.com/player.html?aid=418386065&bvid=BV16V411x7Sd&cid=349126531&page=1"
+  src="https://player.bilibili.com/player.html?aid=248501104&bvid=BV1ov411V7j6&cid=351464447&page=1"
   width="560"
   height="315"
   frameborder="0"
